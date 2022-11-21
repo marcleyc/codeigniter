@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title></title>
+	<meta name="author" content="Marcley"/>
+	<meta name="created" content="2022-11-08T16:11:00"/>	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="bootstrap.min.css" />
+
+<body>
+<div title="header"><p align="center" style="margin-bottom: 0.5cm"><img src="img/alc-logo.jpg" name="Imagem 1" align="center" width="501" height="79" border="0" /></p>	
+	
+<div class="container" style="width: 58rem;">
+	<h7>FICHA DE CADASTRO</h7></br></br>
+	<i>Os dados pessoais informados serão tratados em conformidade com as disposições legais aplicáveis em matéria de proteção de dados.</i></br></br>
+	<form class="row row-cols-lg-auto g-3 align-items-center">
+		<div class="col-12">
+		  <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+		  
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Nome Completo</div><input type="text" class="form-control" name="nome" placeholder="nome" required />
+		  </div>
+		  
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Naturalidade</div><input type="text" class="form-control" name="naturalidade" placeholder="naturalidade" required />
+			<div class="input-group-text">Nacionalidade</div><input type="text" class="form-control" name="nacionalidade" placeholder="nacionalidade" required />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Data de nascimento </div><input type="date" class="form-control" name="nascimento" placeholder="nascimento" required />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Nome do pai</div><input type="text" class="form-control" name="pai" placeholder="pai" />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Nome do mãe</div><input type="text" class="form-control" name="mãe" placeholder="mãe" required />
+		  </div>
+		  
+		  <div class="input-group input-group-sm">
+			<label class="input-group-text" for="inputGroupSelect01">Identidade</label>
+			<select class="form-select" name="ident-tipo" required>
+			  <option selected>tipo</option>
+			  <option value="1">RG</option>
+			  <option value="2">CNH</option>
+			</select>
+			<span class="input-group-text" name="ident-num">n.º</span>
+			<input type="text" class="form-control" placeholder="número" aria-label="Server">
+			<span class="input-group-text" name="emissao">emissão</span>
+			<input type="date" class="form-control" placeholder="e-mail" aria-label="Server">
+			<span class="input-group-text" name="validade">validade</span>
+			<input type="date" class="form-control" placeholder="e-mail" aria-label="Server">
+		  </div>
+
+          <div class="input-group input-group-sm">
+			<div class="input-group-text">Número do CPF</div><input type="text" class="form-control" name="cpf" placeholder="CPF" required />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<label class="input-group-text" for="inputGroupSelect01">Passaporte</label>
+			<span class="input-group-text" name="passaporte">n.º</span>
+			<input type="text" class="form-control" placeholder="número" aria-label="Server">
+			<span class="input-group-text" name="pass-emissor">Orgão emissor</span>
+			<input type="text" class="form-control" placeholder="orgão emissor" aria-label="Server">			
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<label class="input-group-text" for="inputGroupSelect01">Passaporte</label>
+			<span class="input-group-text" name="pass-emissao">Emissão</span>
+			<input type="date" class="form-control" placeholder="número" aria-label="Server">
+			<span class="input-group-text" name="pass-validade">Validade</span>
+			<input type="date" class="form-control" placeholder="orgão emissor" aria-label="Server">			
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Endereço completo</div><input type="text" class="form-control" name="endereco" placeholder="endereço" required />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<span class="input-group-text">CEP</span>
+			<input type="text" class="form-control" placeholder="CEP" name="cep" aria-label="Username" required>
+			<span class="input-group-text">@</span>
+			<input type="email" class="form-control" placeholder="e-mail" name="email" aria-label="Server" required>
+		  </div>
+        
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Celular</div><input type="text" class="form-control" name="celular" placeholder="celular" required />
+			<div class="input-group-text">Profissão</div><input type="text" class="form-control" name="profissao" placeholder="profissão" />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<label class="input-group-text" for="inputGroupSelect01">Estado civil</label>
+			<select class="form-select" name="estado-civ" id="inputGroupSelect01" required>
+			  <option selected>selecione...</option>
+			  <option value="1">solteiro(a)</option>
+			  <option value="2">casado(a) 1ºcasamento </option>
+			  <option value="3">casado(a) 2º ou demais casamentos </option>
+			  <option value="4">união estável</option>
+			  <option value="4">divorciado(a)</option>
+			  <option value="4">viúvo(a)</option>
+			</select>
+			<span class="input-group-text">Têm filhos? Quantos? Idades?</span>
+			<input type="text" class="form-control" placeholder="quantidade" aria-label="Server">			
+		  </div>
+          
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Como soube dos nossos serviços?</div><input type="text" class="form-control" />
+		  </div>
+
+		  <div class="input-group input-group-sm">
+			<div class="input-group-text">Qual o seu principal objetivo com a contratação dos nossos serviços?</div>
+			<input type="text" class="form-control" placeholder="objetivo" required />
+		  </div>
+
+		</br>    	  
+		<div class="col-12">
+		  <button type="submit" class="btn btn-primary">Enviar</button>
+		</div>
+	  </form>
+	</br> 
+
+	<p style="text-align: justify; font-size: 14px"> <i> Designadamente o Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho de 27 de abril de 2016
+		 relativo à proteção das pessoas singulares no que diz respeito ao tratamento de dados pessoais e à livre
+		 circulação desses dados e que revoga a Diretiva 95/46/CE (Regulamento Geral sobre a Proteção de Dados ou “RGPD”)
+		 e a Lei n.º 58/2019, de 8 de agosto que assegura a execução, na ordem jurídica portuguesa, do RGPD (“Lei n.º 58/2019”).</i>
+	</p></br> 
+
+		<div style="text-align: center; font-family:courier,arial,helvetica">
+		    <span>ESCRITÓRIO DE ADVOCACIA</span></br>
+		    <span>Praça da República n.º 8, 2.º - Fração F</span></br> 
+		    <span>3150-127 Condeixa-a-Nova, Coimbra, Portugal</span>
+		</div></br>
+		
+		<p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 17px" >
+			Advogada Andréa L Carvalho | +351 911 992 069 | andrealevindo@gmail.com
+		</p>
+
+</div>
+</body>
+</html>
