@@ -37,3 +37,11 @@ Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+## DB
+-$this->db->select("tb_imam.*,tb_bidang.bidang");
+-$this->db->from("tb_imam");
+-$this->db->join("tb_bidang","tb_imam.bidang_id = tb_bidang.id");
+-$this->db->where("tb_imam.status","Pengerja");
+-$this->db->order_by("coloumn_name");enter code here
+-$this->db->get()->result_array();
